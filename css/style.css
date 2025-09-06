@@ -1,3 +1,22 @@
+/* Custom background for the hero section */
 .hero-bg {
     background-color: #111111;
+    /* You can add a background image here if desired */
+    /* background-image: url('path/to/your/image.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style for the active navigation link */
+.nav-link.active {
+    color: #FFC72C; /* brand-gold */
+}
+
+/* Smooth rotation for the FAQ icon */
+.faq-question svg {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-question svg {
+    transform: rotate(180deg);
 }

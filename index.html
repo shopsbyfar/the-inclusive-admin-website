@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Inclusive Admin | Empowering Educational Leaders</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <script>
         tailwind.config = {
@@ -33,49 +35,58 @@
 </head>
 <body class="bg-brand-light text-brand-text font-serif">
 
-    <header class="bg-black shadow-md sticky top-0 z-50">
+    <header class="bg-brand-dark shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
-            <a href="#">
-                <img src="https://cdn11.bigcommerce.com/s-6dmaxdsjqa/images/stencil/original/image-manager/the-iclusive-admin-logo.jpg?t=1755835512" alt="The Inclusive Admin Logo" class="h-16 w-auto">
+            <a href="#home" class="nav-link">
+                <img src="https://i.imgur.com/yO2G43C.png" alt="The Inclusive Admin Logo" class="h-16 w-auto">
             </a>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="https://shopsbyfar.com/the-inclusive-admin-shop/" class="text-white hover:text-brand-gold transition">Shop</a>
-                <a href="#about" class="text-white hover:text-brand-gold transition">About</a> 
-                <a href="#services" class="text-white hover:text-brand-gold transition">Services</a>
-                <a href="#resources" class="text-white hover:text-brand-gold transition">Resources</a>
-                <a href="shopsbyfar.com/contact-us/" class="bg-brand-gold text-brand-dark font-sans font-bold py-2 px-4 rounded-full hover:bg-opacity-90 transition shadow-sm">Get In Touch</a>
+                <a href="#home" class="nav-link text-white hover:text-brand-gold transition">Home</a>
+                <a href="#about" class="nav-link text-white hover:text-brand-gold transition">About</a>
+                <a href="#services" class="nav-link text-white hover:text-brand-gold transition">Services</a>
+                <a href="#gallery" class="nav-link text-white hover:text-brand-gold transition">Gallery</a>
+                <a href="#testimonials" class="nav-link text-white hover:text-brand-gold transition">Testimonials</a>
+                <a href="#faq" class="nav-link text-white hover:text-brand-gold transition">FAQ</a>
+                <a href="#contact" class="nav-link bg-brand-gold text-brand-dark font-sans font-bold py-2 px-4 rounded-full hover:bg-opacity-90 transition shadow-sm">Contact Us</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
-            <a href="https://shopsbyfar.com/the-inclusive-admin-shop/" class="block py-2 text-white hover:text-brand-gold transition">Shop</a>
-            <a href="#about" class="block py-2 text-white hover:text-brand-gold transition">About</a>
-            <a href="#services" class="block py-2 text-white hover:text-brand-gold transition">Services</a>
-            <a href="#resources" class="block py-2 text-white hover:text-brand-gold transition">Resources</a>
-            <a href="shopsbyfar.com/contact-us/" class="block mt-2 bg-brand-gold text-brand-dark text-center font-sans font-bold py-2 px-4 rounded-full hover:bg-opacity-90 transition shadow-sm">Get In Touch</a>
+            <a href="#home" class="nav-link block py-2 text-white hover:text-brand-gold transition">Home</a>
+            <a href="#about" class="nav-link block py-2 text-white hover:text-brand-gold transition">About</a>
+            <a href="#services" class="nav-link block py-2 text-white hover:text-brand-gold transition">Services</a>
+            <a href="#gallery" class="nav-link block py-2 text-white hover:text-brand-gold transition">Gallery</a>
+            <a href="#testimonials" class="nav-link block py-2 text-white hover:text-brand-gold transition">Testimonials</a>
+            <a href="#faq" class="nav-link block py-2 text-white hover:text-brand-gold transition">FAQ</a>
+            <a href="#contact" class="nav-link block mt-2 bg-brand-gold text-brand-dark text-center font-sans font-bold py-2 px-4 rounded-full hover:bg-opacity-90 transition shadow-sm">Contact Us</a>
         </div>
     </header>
 
     <main>
 
-        <section class="hero-bg py-20 md:py-32">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-sans font-bold mb-4 leading-tight text-brand-gold">Leadership is About Opening Doors for EVERYONE!</h1>
-                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto font-serif italic text-white">Practical strategies and support for school administrators committed to building truly inclusive, equitable, and thriving learning communities.</p>
-                <a href="#resources" class="bg-brand-gold text-brand-dark font-sans font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-transform transform hover:scale-105 shadow-lg text-lg">Explore Free Resources</a>
+        <section id="home" class="page-section">
+            <div class="hero-bg py-20 md:py-32">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-6xl font-sans font-bold mb-4 leading-tight text-brand-gold">Leadership is About Opening Doors for EVERYONE!</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto font-serif italic text-white">Practical strategies and support for school administrators committed to building truly inclusive, equitable, and thriving learning communities.</p>
+                    <a href="https://shopsbyfar.com/the-inclusive-admin-shop/" target="_blank" class="bg-brand-gold text-brand-dark font-sans font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-transform transform hover:scale-105 shadow-lg text-lg">Explore The Shop</a>
+                </div>
             </div>
         </section>
 
-        <section id="about" class="py-20 bg-white">
+        <section id="about" class="page-section hidden py-20 bg-white">
             <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-4xl font-sans font-bold text-brand-dark">About Us</h2>
+                </div>
                 <div class="md:flex items-center">
                     <div class="md:w-1/2 mb-10 md:mb-0">
                         <img src="https://cdn11.bigcommerce.com/s-6dmaxdsjqa/images/stencil/original/image-manager/tia.jpeg?t=1756169525" alt="Founder of The Inclusive Admin" class="rounded-lg shadow-2xl">
                     </div>
                     <div class="md:w-1/2 md:pl-12">
-                        <h2 class="text-3xl font-sans font-bold text-brand-dark mb-4">The Mind behind the Mission</h2>
+                        <h3 class="text-3xl font-sans font-bold text-brand-dark mb-4">The Mind behind the Mission</h3>
                         <p class="text-lg mb-4 leading-relaxed">As an administrator, I know the feeling. You're handed diversity mandates and equity goals, but given little practical support to make them a reality. You're passionate about every student thriving, but you're buried under operational demands.</p>
                         <p class="text-lg mb-6 leading-relaxed">The Inclusive Admin was born from that gap. It’s not about buzzwords or checking boxes. It’s a community and resource hub dedicated to providing the actionable tools, coaching, and support that transform your good intentions into tangible, positive change for your students and staff.</p>
                         <a href="https://linktr.ee/inclusiveadmin" target="_blank" class="text-brand-copper font-bold font-sans hover:underline">Follow the Journey on Social →</a>
@@ -84,98 +95,148 @@
             </div>
         </section>
 
-        <section id="services" class="py-20 bg-brand-light">
+        <section id="services" class="page-section hidden py-20 bg-brand-light">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-sans font-bold text-brand-dark mb-2">How We Can Partner</h2>
+                    <h2 class="text-4xl font-sans font-bold text-brand-dark mb-2">Our Services</h2>
                     <p class="text-lg max-w-2xl mx-auto">From your wardrobe to your workshops, we're here to support your leadership.</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8">
                     <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="text-brand-gold mb-4">
-                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                        </div>
                         <h3 class="text-xl font-sans font-bold text-brand-dark mb-3">Workshops & Coaching</h3>
                         <p class="leading-relaxed">Interactive virtual or in-person workshops for leadership teams on topics like equity audits, culturally responsive feedback, and inclusive hiring.</p>
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="text-brand-gold mb-4">
-                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
-                        </div>
                         <h3 class="text-xl font-sans font-bold text-brand-dark mb-3">Digital Resources</h3>
                         <p class="leading-relaxed">Downloadable toolkits, templates, and guides. Get instant access to classroom walkthrough checklists, inclusive meeting agendas, and more.</p>
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
-                         <div class="text-brand-gold mb-4">
-                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-                        </div>
                         <h3 class="text-xl font-sans font-bold text-brand-dark mb-3">Apparel & Goods</h3>
-                        <p class="leading-relaxed">Show your commitment to the work with our line of apparel and office goods designed for the modern, inclusive leader. Spark conversations and build culture.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="resources" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-sans font-bold text-brand-dark mb-2">Start Making a Difference Today</h2>
-                    <p class="text-lg max-w-2xl mx-auto">Grab our most popular free resource to begin your journey.</p>
-                </div>
-                <div class="max-w-4xl mx-auto bg-brand-light rounded-lg shadow-xl md:flex items-center overflow-hidden">
-                    <div class="md:w-1/3">
-                        <img src="https://placehold.co/400x400/111111/FFC72C?text=Free+Guide" alt="Inclusive Classroom Checklist" class="h-full w-full object-cover">
-                    </div>
-                    <div class="md:w-2/3 p-8 md:p-12">
-                        <h3 class="text-2xl font-sans font-bold text-brand-dark mb-3">The Inclusive Classroom Walkthrough Checklist</h3>
-                        <p class="mb-6 leading-relaxed">This isn't about "gotchas." This 5-minute checklist helps you and your teachers look for evidence of belonging. It provides a simple framework to start positive, data-informed conversations about inclusion in every classroom.</p>
-                        <a href="#" class="bg-brand-gold text-brand-dark font-sans font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-transform transform hover:scale-105 shadow-lg">Download for Free</a>
+                        <p class="leading-relaxed">Show your commitment with our apparel and office goods designed for the modern, inclusive leader. Spark conversations and build culture.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-brand-copper text-white">
+        <section id="gallery" class="page-section hidden py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-sans font-bold text-brand-dark">Gallery</h2>
+                    <p class="text-lg max-w-2xl mx-auto">A glimpse into our community, resources, and events.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="https://placehold.co/600x400/c08570/FFFFFF/png" alt="Gallery Image 1" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://placehold.co/600x400/ffc72c/111111/png" alt="Gallery Image 2" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://placehold.co/600x400/111111/FFFFFF/png" alt="Gallery Image 3" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://placehold.co/600x400/f8f9fa/333333/png" alt="Gallery Image 4" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://placehold.co/600x400/ffc72c/111111/png" alt="Gallery Image 5" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://placehold.co/600x400/c08570/FFFFFF/png" alt="Gallery Image 6" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://placehold.co/600x400/f8f9fa/333333/png" alt="Gallery Image 7" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://placehold.co/600x400/111111/FFFFFF/png" alt="Gallery Image 8" class="rounded-lg shadow-md w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="page-section hidden py-20 bg-brand-copper text-white">
              <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                     <h2 class="text-3xl font-sans font-bold mb-2">What Leaders Are Saying</h2>
+                     <h2 class="text-4xl font-sans font-bold">What Leaders Are Saying</h2>
                 </div>
                 <div class="max-w-3xl mx-auto text-center">
-                    <div class="text-brand-gold mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a2 2 0 00-2 2v12a2 2 0 002 2h1a2 2 0 002-2V4a2 2 0 00-2-2h-1zM6 4a2 2 0 00-2 2v8a2 2 0 002 2h1a2 2 0 002-2V6a2 2 0 00-2-2H6zM14 4a2 2 0 00-2 2v8a2 2 0 002 2h1a2 2 0 002-2V6a2 2 0 00-2-2h-1z"></path></svg>
-                    </div>
                     <p class="text-xl italic mb-6">"The resources from The Inclusive Admin are the first thing I've found that feel like they were made by someone who actually understands the daily pressures of this job. Practical, respectful, and immediately useful."</p>
                     <p class="font-bold font-sans text-lg">- J. Davis, High School Principal</p>
                 </div>
             </div>
         </section>
 
+        <section id="faq" class="page-section hidden py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-sans font-bold text-brand-dark">Frequently Asked Questions</h2>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <div class="faq-item border rounded-lg overflow-hidden">
+                        <button class="faq-question w-full text-left p-4 bg-brand-light flex justify-between items-center font-sans font-semibold">
+                            <span>What types of services do you offer?</span>
+                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-answer hidden p-4 bg-white">
+                            <p>We offer a range of services including virtual and in-person workshops for leadership teams, one-on-one coaching, downloadable digital resources like toolkits and templates, and a line of apparel and office goods to promote inclusive leadership.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item border rounded-lg overflow-hidden">
+                         <button class="faq-question w-full text-left p-4 bg-brand-light flex justify-between items-center font-sans font-semibold">
+                            <span>Who are these resources for?</span>
+                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-answer hidden p-4 bg-white">
+                            <p>Our resources are specifically designed for K-12 school administrators, including principals, assistant principals, department heads, and district leaders who are committed to creating more inclusive and equitable school environments.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item border rounded-lg overflow-hidden">
+                         <button class="faq-question w-full text-left p-4 bg-brand-light flex justify-between items-center font-sans font-semibold">
+                            <span>How do I access the digital resources?</span>
+                             <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-answer hidden p-4 bg-white">
+                             <p>Many of our digital resources are available for free on our website. Premium resources and comprehensive toolkits can be purchased through our online <a href="https://shopsbyfar.com/the-inclusive-admin-shop/" target="_blank" class="text-brand-copper hover:underline">shop</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section hidden py-20 bg-brand-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-sans font-bold text-brand-dark">Contact Us</h2>
+                    <p class="text-lg max-w-2xl mx-auto">Ready to lead with inclusion? Let's connect.</p>
+                </div>
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <form id="contact-form" action="mailto:info@theinclusiveadmin.com" method="post" enctype="text/plain">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" name="Full_Name" placeholder="Full Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                            <input type="email" name="Email" placeholder="Email Address" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                            <input type="text" name="School_Organization" placeholder="School / Organization" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                            <input type="text" name="Role_Title" placeholder="Your Role / Title" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                        </div>
+                        <textarea name="Message" placeholder="How can we help you foster inclusion?" rows="6" class="w-full p-3 border rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-brand-gold"></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="bg-brand-gold text-brand-dark font-sans font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-transform transform hover:scale-105 shadow-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer id="contact" class="bg-brand-dark text-brand-light">
+    <footer class="bg-brand-dark text-brand-light">
         <div class="container mx-auto px-6 py-12">
-            <div class="md:flex justify-between items-center">
+            <div class="md:flex justify-between items-center text-center md:text-left">
                 <div class="mb-8 md:mb-0">
-                    <h3 class="text-2xl font-sans font-bold mb-2">Ready to Lead with Inclusion?</h3>
-                    <p>Let's connect. Follow the journey and join the community.</p>
+                    <img src="https://i.imgur.com/yO2G43C.png" alt="The Inclusive Admin Logo" class="h-16 w-auto mx-auto md:mx-0 mb-4">
+                    <p class="font-sans">Empowering Educational Leaders</p>
+                    <p class="text-gray-400">info@theinclusiveadmin.com</p>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <a href="https://linktr.ee/inclusiveadmin" target="_blank" class="bg-brand-gold text-brand-dark font-sans font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition shadow-sm">Visit Linktree</a>
+                <div class="flex flex-col items-center md:items-end">
+                     <div class="flex items-center space-x-4 mb-4">
+                        <a href="https://www.instagram.com/inclusiveadmin/" target="_blank" class="text-gray-400 hover:text-white transition">Instagram</a>
+                        <a href="https://www.facebook.com/inclusiveadmin" target="_blank" class="text-gray-400 hover:text-white transition">Facebook</a>
+                        <a href="https://www.tiktok.com/@inclusiveadmin" target="_blank" class="text-gray-400 hover:text-white transition">TikTok</a>
+                        <a href="https://www.youtube.com/@inclusiveadmin" target="_blank" class="text-gray-400 hover:text-white transition">YouTube</a>
+                    </div>
+                    <a href="https://linktr.ee/inclusiveadmin" target="_blank" class="bg-brand-gold text-brand-dark font-sans font-bold py-2 px-5 rounded-full hover:bg-opacity-90 transition shadow-sm">Visit Linktree</a>
                 </div>
             </div>
             <hr class="border-gray-600 my-8">
-            <div class="text-center md:flex justify-between items-center">
-                <p class="text-sm mb-4 md:mb-0">&copy; 2025 The Inclusive Admin. All Rights Reserved.</p>
-                <div class="flex justify-center space-x-6">
-                    <a href="https://www.instagram.com/inclusiveadmin/" class="text-gray-400 hover:text-white transition">Instagram</a>
-                    <a href="https://www.tiktok.com/@inclusiveadmin" class="text-gray-400 hover:text-white transition">TikTok</a>
-                    <a href="https://www.facebook.com/inclusiveadmin" class="text-gray-400 hover:text-white transition">Facebook</a>
-                </div>
+            <div class="text-center">
+                <p class="text-sm">&copy; 2025 The Inclusive Admin. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
